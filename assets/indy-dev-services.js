@@ -18,6 +18,42 @@
   var _default = App;
   _exports.default = _default;
 });
+;define("indy-dev-services/components/main-nav", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Component.extend({});
+
+  _exports.default = _default;
+});
+;define("indy-dev-services/components/menu-bar", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Component.extend({});
+
+  _exports.default = _default;
+});
+;define("indy-dev-services/components/page-logo", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Component.extend({});
+
+  _exports.default = _default;
+});
 ;define("indy-dev-services/components/welcome-page", ["exports", "ember-welcome-page/components/welcome-page"], function (_exports, _welcomePage) {
   "use strict";
 
@@ -269,8 +305,34 @@
     location: _environment.default.locationType,
     rootURL: _environment.default.rootURL
   });
-  Router.map(function () {});
+  Router.map(function () {
+    this.route('home');
+  });
   var _default = Router;
+  _exports.default = _default;
+});
+;define("indy-dev-services/routes/home", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Route.extend({});
+
+  _exports.default = _default;
+});
+;define("indy-dev-services/routes/index", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.Route.extend({});
+
   _exports.default = _default;
 });
 ;define("indy-dev-services/services/ajax", ["exports", "ember-ajax/services/ajax"], function (_exports, _ajax) {
@@ -295,10 +357,100 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "ZHeNP/p+",
-    "block": "{\"symbols\":[],\"statements\":[[5,\"welcome-page\",[],[[],[]]],[0,\"\\n\"],[0,\"\\n\"],[1,[23,\"outlet\"],false]],\"hasEval\":false}",
+    "id": "jJ/47tpH",
+    "block": "{\"symbols\":[],\"statements\":[[5,\"main-nav\",[],[[],[]]],[0,\"\\n\"],[1,[23,\"outlet\"],false]],\"hasEval\":false}",
     "meta": {
       "moduleName": "indy-dev-services/templates/application.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("indy-dev-services/templates/components/main-nav", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "ym7az4Vd",
+    "block": "{\"symbols\":[\"&default\"],\"statements\":[[7,\"header\"],[9],[0,\"\\n  \"],[5,\"page-logo\",[],[[],[]],{\"statements\":[[0,\"Indy Dev Services\"]],\"parameters\":[]}],[0,\"\\n  \"],[5,\"menu-bar\",[],[[],[]],{\"statements\":[],\"parameters\":[]}],[0,\"\\n\"],[10],[0,\"\\n\"],[15,1]],\"hasEval\":false}",
+    "meta": {
+      "moduleName": "indy-dev-services/templates/components/main-nav.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("indy-dev-services/templates/components/menu-bar", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "xaoMbPnV",
+    "block": "{\"symbols\":[\"&default\"],\"statements\":[[7,\"nav\"],[9],[0,\"\\n  \"],[7,\"ul\"],[11,\"class\",\"nav-bar\"],[9],[0,\"\\n    \"],[7,\"li\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-home\"],[11,\"aria-hidden\",\"true\"],[9],[10],[0,\"\\n      \"],[4,\"link-to\",[\"home\"],null,{\"statements\":[[0,\"Home\"]],\"parameters\":[]},null],[0,\"\\n    \"],[10],[0,\"\\n    \"],[7,\"li\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-id-card-o\"],[11,\"aria-hidden\",\"true\"],[9],[10],[0,\"\\n      \"],[4,\"link-to\",[\"home\"],null,{\"statements\":[[0,\"Services\"]],\"parameters\":[]},null],[0,\"\\n    \"],[10],[0,\"\\n    \"],[7,\"li\"],[9],[0,\"\\n      \"],[7,\"i\"],[11,\"class\",\"fa fa-users\"],[11,\"aria-hidden\",\"true\"],[9],[10],[0,\"\\n      \"],[4,\"link-to\",[\"home\"],null,{\"statements\":[[0,\"About\"]],\"parameters\":[]},null],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\"],[15,1]],\"hasEval\":false}",
+    "meta": {
+      "moduleName": "indy-dev-services/templates/components/menu-bar.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("indy-dev-services/templates/components/page-logo", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "CrpPlLQP",
+    "block": "{\"symbols\":[\"&default\"],\"statements\":[[7,\"div\"],[11,\"class\",\"row\"],[9],[0,\"\\n  \"],[7,\"h1\"],[11,\"class\",\"logo center\"],[9],[0,\"\\n    \"],[7,\"a\"],[9],[0,\"\\n      \"],[15,1],[0,\"\\n    \"],[10],[0,\"\\n  \"],[10],[0,\"\\n\"],[10]],\"hasEval\":false}",
+    "meta": {
+      "moduleName": "indy-dev-services/templates/components/page-logo.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("indy-dev-services/templates/home", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "UDxAvdKB",
+    "block": "{\"symbols\":[],\"statements\":[[1,[23,\"outlet\"],false]],\"hasEval\":false}",
+    "meta": {
+      "moduleName": "indy-dev-services/templates/home.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("indy-dev-services/templates/index", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "EhW8mGwL",
+    "block": "{\"symbols\":[],\"statements\":[[1,[23,\"outlet\"],false]],\"hasEval\":false}",
+    "meta": {
+      "moduleName": "indy-dev-services/templates/index.hbs"
     }
   });
 
@@ -327,7 +479,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("indy-dev-services/app")["default"].create({"name":"indy-dev-services","version":"0.0.0+3a4081ef"});
+            require("indy-dev-services/app")["default"].create({"name":"indy-dev-services","version":"0.0.0+c2730035"});
           }
         
 //# sourceMappingURL=indy-dev-services.map
