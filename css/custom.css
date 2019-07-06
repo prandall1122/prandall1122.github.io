@@ -11,7 +11,7 @@
 
 .tile--ember {
   padding: 0 37px;
-  background-color: #E34C32;
+  background-color: #e34c32;
 }
 
 .tile--bootstrap {
@@ -22,13 +22,13 @@
   max-height: 100%;
 }
 
-.tile--typescript {
-  background-color: #fff;
+.tile--react {
+  background-color: #000;
   width: 100%;
   height: 264px;
 }
 
-.tile--typescript img {
+.tile--react img {
   height: 264px;
 }
 
